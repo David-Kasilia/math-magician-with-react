@@ -1,41 +1,83 @@
 import React from 'react';
 import '../App.css';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+  constructor() {
+    super();
+    this.state = {
+      total: '0',
+      next: null,
+      operation: null,
+    };
+
+    this.onClickHandler = this.onClickHandler.bind(this);
   }
 
+  onClickHandler = (e) => {
+    if (!e.target.name) return;
+
+    const { next, total, operation } = calculate(this.state, e.target.name);
+
+    if (next === null && total === null) {
+      this.setState({ next, total: '0', operation });
+    } else {
+      this.setState({ next, total, operation });
+    }
+  };
+
   render() {
+    const { next, total } = this.state;
+    const button = [
+      'AC',
+      '+/-',
+      '%',
+      '÷',
+      '7',
+      '8',
+      '9',
+      'x',
+      '4',
+      '5',
+      '6',
+      '-',
+      '1',
+      '2',
+      '3',
+      '+',
+      '0',
+      '.',
+      '=',
+    ];
+
     return (
       <div className="calculator-grid">
-        <div className="output">
-          <div className="previous-operand" />
-          <div className="current-operand">
-            0
+        {next ? (
+          <div className="operand">
+            {next}
           </div>
-        </div>
+        ) : (
+          <div className="operand">
+            {total}
+          </div>
+        )}
 
-        <button type="button" className="btn">AC</button>
-        <button type="button" className="btn">+/-</button>
-        <button type="button" className="btn">%</button>
-        <button type="button" className="btn1">÷</button>
-        <button type="button" className="btn">7</button>
-        <button type="button" className="btn">8</button>
-        <button type="button" className="btn">9</button>
-        <button type="button" className="btn1">×</button>
-        <button type="button" className="btn">4</button>
-        <button type="button" className="btn">5</button>
-        <button type="button" className="btn">6</button>
-        <button type="button" className="btn1">-</button>
-        <button type="button" className="btn">1</button>
-        <button type="button" className="btn">2</button>
-        <button type="button" className="btn">3</button>
-        <button type="button" className="btn1">+</button>
-        <button type="button" className="span-two">0</button>
-        <button type="button" className="btn">.</button>
-        <button type="button" className="btn1">=</button>
+        { button.map((buttonSymbol) => (
+          <button
+            onClick={(e) => this.onClickHandler(e)}
+            name={buttonSymbol}
+            type="button"
+            className={`btn ${buttonSymbol === '0' ? 'btn-zero' : ''} 
+            ${buttonSymbol === '=' ? 'btn-equal' : ''}
+            ${buttonSymbol === '÷' ? 'btn-divide' : ''}
+            ${buttonSymbol === 'x' ? 'btn-multiply' : ''}
+            ${buttonSymbol === '-' ? 'btn-subtract' : ''}
+            ${buttonSymbol === '+' ? 'btn-add' : ''}`}
+            key={buttonSymbol}
+          >
+            {buttonSymbol}
+          </button>
+        ))}
 
       </div>
     );
