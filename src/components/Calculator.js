@@ -45,34 +45,32 @@ const Calculator = () => {
   ];
 
   return (
-    <div className="calculator-grid">
-      {next ? (
-        <div className="operand">
-          {next}
-        </div>
-      ) : (
-        <div className="operand">
-          {total}
-        </div>
-      )}
+    <div className="calculator">
+      <h2>Let us do some math</h2>
+      <div className="calculator-grid">
+        {next ? (
+          <div className="operand">{next}</div>
+        ) : (
+          <div className="operand">{total}</div>
+        )}
 
-      { button.map((buttonSymbol) => (
-        <button
-          onClick={onClickHandler}
-          name={buttonSymbol}
-          type="button"
-          className={`btn ${buttonSymbol === '0' ? 'btn-zero' : ''} 
+        {button.map((buttonSymbol) => (
+          <button
+            onClick={onClickHandler}
+            name={buttonSymbol}
+            type="button"
+            className={`btn ${buttonSymbol === '0' ? 'btn-zero' : ''} 
             ${buttonSymbol === '=' ? 'btn-equal' : ''}
             ${buttonSymbol === '÷' ? 'btn-divide' : ''}
             ${buttonSymbol === 'x' ? 'btn-multiply' : ''}
             ${buttonSymbol === '-' ? 'btn-subtract' : ''}
             ${buttonSymbol === '+' ? 'btn-add' : ''}`}
-          key={buttonSymbol}
-        >
-          {buttonSymbol}
-        </button>
-      ))}
-
+            key={buttonSymbol}
+          >
+            {buttonSymbol}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
