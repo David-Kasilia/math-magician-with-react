@@ -46,7 +46,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator">
-      <h2>Let us do some math</h2>
+      <h2 className="title2">Let us do some math</h2>
       <div className="calculator-grid">
         {next ? (
           <div className="operand">{next}</div>
