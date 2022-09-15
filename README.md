@@ -42,6 +42,9 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Link To Netlify Deployment
+https://math-magicians-kasilia-creations.netlify.app/
+
 # Built with
 <ul>
 <li>HTML</li>
@@ -50,6 +53,21 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 <li>Webpack</li>
 <li>Jest</li>
 </ul>
+
+
+## Home Page
+![6322fbc0f5f3e017ccea9b9c--comfy-hotteok-ee5b3f netlify app-MathMagicians(1)](https://user-images.githubusercontent.com/83514256/190379860-303a5c14-4ee2-4677-a062-a5d205d4a6a1.png)
+
+## Calculator Page
+![6322fbc0f5f3e017ccea9b9c--comfy-hotteok-ee5b3f netlify app-MathMagicians](https://user-images.githubusercontent.com/83514256/190379869-b05fe81e-2c51-46b3-aa8d-09d1769db5fe.png)
+
+
+## Quote Page
+![6322fbc0f5f3e017ccea9b9c--comfy-hotteok-ee5b3f netlify app-MathMagicians(2)](https://user-images.githubusercontent.com/83514256/190379882-3dadd02a-9021-4c68-909b-74be1c4efcf9.png)
+
+
+
+
 
 # Prerequisites
 <ul>
