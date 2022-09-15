@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit Test For Calculator component Calculator Component renders correctly 1`] = `
+<div
+  className="calculator"
+>
+  <h2
+    className="title2"
+  >
+    Let us do some math
+  </h2>
+  <div
+    className="calculator-grid"
+  >
+    <div
+      className="operand"
+    >
+      0
+    </div>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="AC"
+      onClick={[Function]}
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="+/-"
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="%"
+      onClick={[Function]}
+      type="button"
+    >
+      %
+    </button>
+    <button
+      className="btn  
+            
+            btn-divide
+            
+            
+            "
+      name="÷"
+      onClick={[Function]}
+      type="button"
+    >
+      ÷
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="7"
+      onClick={[Function]}
+      type="button"
+    >
+      7
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="8"
+      onClick={[Function]}
+      type="button"
+    >
+      8
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="9"
+      onClick={[Function]}
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="btn  
+            
+            
+            btn-multiply
+            
+            "
+      name="x"
+      onClick={[Function]}
+      type="button"
+    >
+      x
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="4"
+      onClick={[Function]}
+      type="button"
+    >
+      4
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="5"
+      onClick={[Function]}
+      type="button"
+    >
+      5
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="6"
+      onClick={[Function]}
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            btn-subtract
+            "
+      name="-"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="1"
+      onClick={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="2"
+      onClick={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="3"
+      onClick={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            btn-add"
+      name="+"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      className="btn btn-zero 
+            
+            
+            
+            
+            "
+      name="0"
+      onClick={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className="btn  
+            
+            
+            
+            
+            "
+      name="."
+      onClick={[Function]}
+      type="button"
+    >
+      .
+    </button>
+    <button
+      className="btn  
+            btn-equal
+            
+            
+            
+            "
+      name="="
+      onClick={[Function]}
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
